@@ -25,9 +25,13 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
-h1, header p {
+header h1, p {
     color: white;
     margin-bottom: 30px;
+}
+
+h1, h2 {
+    font-size: 40px;
 }
 
 p {
@@ -45,6 +49,7 @@ a {
     padding: 15px 20px;
     border-radius: 25px;
     text-align: center;
+    display: inline-block;
 }
 
 .btn.small {
@@ -62,6 +67,11 @@ a {
 
 .white {
     color: #23272a;
+}
+
+.blue {
+    background-color: #7289da;
+    color: #fff;
 }
 
 .download::before {
@@ -160,14 +170,14 @@ debug
     height: 410px;
 }
 
-.debug .row .box-blue, 
-.box-pink {
+/* .debug .row .col-small, 
+.col-mid {
     height: 500px;
-}
+} */
 
-.debug .row .box-green {
+/* .debug .row .col-big {
     height: 900px;
-}
+} */
 
 .debug .footer-top > * {
     height: 580px;
@@ -187,26 +197,86 @@ main > .row:nth-child(even){
 .row {
     display: flex;
     justify-content: center;
+    align-items: flex-start;
     margin: 0 auto;
     padding: 60px 0;
 }
 
-.box-blue {
-    background-color: #1e90ff;
+.col-mid {
     width: 50%;
+    height: 300px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
 }
 
-.box-pink {
-    background-color: #ffc0cb;
+.col-small {
     width: 30%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
-.box-green {
+.col-small h2, p{
+    text-align: left;
+    color:#23272a;
+}
+
+.col-big {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 80%;
-    background-color: #228b22;
 }
 
-/* 
+.col-big h2, p {
+    text-align: center;
+    width: 70%;
+    margin: 20px auto;
+}
+
+.col-big .item-img {
+    width: 70%;
+    height: 600px;
+    margin: 0 auto;
+    background-image: url(../img/item4-big.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.call-to-action {
+    width: 35%;
+    background-image: url(../img/stars.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+.call-to-action h3 {
+    text-align: center;
+}
+
+.col-small h2 {
+    margin-bottom: 40px;
+}
+
+ #img-1 {
+    background-image: url(../img/item1.svg);
+} 
+
+#img-2 {
+    background-image: url(../img/item2.svg);
+}
+
+#img-3 {
+    background-image: url(../img/item3.svg);
+} 
+
+/*
 -----------------
 footer
 ----------------- 
