@@ -21,6 +21,56 @@ general
     border: 1px dashed black;
 }
 
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+h1, header p {
+    color: white;
+    margin-bottom: 30px;
+}
+
+p {
+    line-height: 1.5em;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: #23272a;
+}
+
+.btn{
+    background-color: white;
+    padding: 15px 20px;
+    border-radius: 25px;
+    text-align: center;
+}
+
+.btn.small {
+    font-size: 12px; 
+}
+
+.btn.medium {
+    font-size: 15px;
+}
+
+.black {
+    background-color: #23272a;
+    color: white;
+}
+
+.white {
+    color: #23272a;
+}
+
+.download::before {
+    font-family: FontAwesome;
+    content: "\f063";
+    vertical-align: middle;
+    font-size: 17px;
+}
+
 
 /* 
 -----------------
@@ -28,13 +78,13 @@ header
 ----------------- 
 */
 
+
 .header-top {
-    background-color: #add8e6;
+    background-color: #255ee9;
     padding: 20px 0;
 }
 
 .navbar {
-    background-color: #daa520;
     display: flex;
     justify-content: space-between;
     width: 80%;
@@ -48,33 +98,38 @@ header
 .nav-items {
     display: flex;
     justify-content: center;
+    align-items: center;
     list-style-type: none;
-    gap: 10px;
+    gap: 40px;
     width: 60%;
 }
 
+
 .nav-item a {
-    color: #00000a;
+    color: white;
     text-decoration: none;
 }
 
 .logo-container, 
 .login-container {
+    display: flex;
     width: 20%;
 }
 
 .logo-container {
     padding-left: 10px;
+    align-items: center;
 }
 
 .login-container {
-    display: flex;
     justify-content: flex-end;
+    align-items: center;
     padding-right: 10px;
 }
 
 .header-bottom {
-    background-color: #00008b;
+    background-image: url(../img/jumbo.png);
+    background-size: contain;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -82,10 +137,17 @@ header
 }
 
 
-
 .header-main-container {
-    background-color: #ee82ee;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 60px;
     width: 60%;
+}
+
+.header-main-container .btn {
+    display: inline-block;
 }
 
 /* 
