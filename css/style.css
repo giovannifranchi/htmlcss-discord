@@ -13,13 +13,32 @@ Reset
 
 /* 
 -----------------
+wave
+----------------- 
+*/
+
+.wave-container {
+    background: #fff;
+  }
+.wave-container > svg {
+    display: block;
+    color: #d3d3d3;
+  }
+
+.wave-container.even {
+    background: #d3d3d3;
+  }
+.wave-container.even > svg {
+    display: block;
+    color: #fff;
+  }
+
+/* 
+-----------------
 general
 ----------------- 
 */
 
-.flex {
-    border: 1px dashed black;
-}
 
 body {
     font-family: 'Roboto', sans-serif;
@@ -168,7 +187,7 @@ main
 ----------------- 
 */
 
-main > .row:nth-child(even){
+main section:nth-child(even){
     background-color: #d3d3d3;
     flex-direction: row-reverse;
 }
